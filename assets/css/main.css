@@ -5,6 +5,7 @@
 	Massively by HTML5 UP
 	html5up.net | @ajlkn
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+
 */
 
 html, body, div, span, applet, object,
@@ -4687,3 +4688,33 @@ input, select, textarea {
 		}
 
 	}
+/* JOLLY Desserts — mobile logo fix */
+.logo-wrapper img {
+  width: min(92vw, 520px);
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+body {
+  background: linear-gradient(180deg, #b9a6f2 0%, #f6f3ff 70%, #ffffff 100%);
+}
+.menu-card {
+  background: rgba(255, 255, 255, 0.92);
+  border-radius: 16px;
+  padding: 18px;
+  margin: 14px 0;
+}
+
+.menu-card h2,
+.menu-card h3 {
+  color: #1a1a1a;
+}
+
+.menu-card, 
+.menu-card p, 
+.menu-card li {
+  color: #1a1a1a;
+  font-size: 1.05rem;
+  line-height: 1.5;
+}
+
