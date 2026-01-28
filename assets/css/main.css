@@ -4924,6 +4924,33 @@ html, body {
 #wrapper {
   background-color: #b9a6f2 !important;
 }
+/* =================================
+   JOLLY – FIX PAGE 3 ALIGNMENT
+   ================================= */
+
+/* Ensure all menu pages are centred equally */
+.jolly-step,
+#page3 {
+  max-width: 72rem;        /* matches Massively content width */
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  box-sizing: border-box;
+}
+
+/* Make menu cards always centred */
+.jolly-menu {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Safety: prevent left drift on mobile */
+.menu-card {
+  margin-left: auto;
+  margin-right: auto;
+}
+
 
 
 
