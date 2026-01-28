@@ -4825,6 +4825,40 @@ body {
 .jolly-page { display: none; }
 .jolly-page.is-active { display: block; }
 
+/* JOLLY brand background – prevent brown overscroll */
+html, body {
+  background: #b9a6f2;
+}
+
+#wrapper {
+  background: #b9a6f2;
+}
+#main {
+  background: transparent;
+}
+/* ===== JOLLY GLOBAL BRAND BACKGROUND ===== */
+
+/* Prevent brown/grey anywhere */
+html, body {
+  background: #b9a6f2;
+}
+
+/* Wrapper background */
+#wrapper {
+  background: #b9a6f2;
+}
+
+/* Intro section background override */
+#intro {
+  background: #b9a6f2 !important;
+}
+
+/* Remove Massively intro overlay/gradient */
+#intro::before,
+#intro::after {
+  display: none !important;
+}
+
 
 
 
