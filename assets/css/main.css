@@ -4695,6 +4695,15 @@ input, select, textarea {
   display: block;
   margin: 0 auto;
 }
+/* JOLLY Desserts — intro background */
+#intro {
+  background: #b9a6f2;
+}
+
+#intro:before {
+  background: none;
+}
+
 body {
   background: linear-gradient(180deg, #b9a6f2 0%, #f6f3ff 70%, #ffffff 100%);
 }
@@ -4717,4 +4726,5 @@ body {
   font-size: 1.05rem;
   line-height: 1.5;
 }
+
 
