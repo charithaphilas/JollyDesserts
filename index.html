@@ -58,7 +58,7 @@
 
 						<!-- Featured Post -->
 							<!-- Featured Post -->
-								<article class="post featured" id="page1">
+								<article class="post featured jolly-page" id="page1">
 								  <header class="major">
 								    <h2>Menu 😋</h2>
 								    <p>Build your own treat in 3 easy steps!</p>
@@ -130,7 +130,7 @@
 								  </section>
 								</article>
 									<!-- Page 2 -->
-									<section id="page2" class="jolly-step">
+									<section id="page2" class="jolly-step jolly-page">
 									  <header class="major">
 									    <h2>Desserts & Savoury 🍰🍟</h2>
 									    <p>Something sweet… or something salty 😄</p>
@@ -180,7 +180,7 @@
 									
 									
 									<!-- Page 3 -->
-									<section id="page3" class="jolly-step">
+									<section id="page3" class="jolly-step jolly-page">
 									  <header class="major">
 									    <h2>Shakes & Drinks 🥤🧋</h2>
 									    <p>Cold, creamy, and refreshing ❄️</p>
@@ -261,8 +261,28 @@
 			<script src="assets/js/main.js"></script>
 
 	</body>
+			<script>
+			  (function () {
+			    function showPageFromHash() {
+			      var hash = window.location.hash || "#page1";
+			      var pages = document.querySelectorAll(".jolly-page");
+			      pages.forEach(function (p) { p.classList.remove("is-active"); });
+			
+			      var active = document.querySelector(hash);
+			      if (!active) active = document.querySelector("#page1");
+			      active.classList.add("is-active");
+			
+			      // jump to top of the active section cleanly
+			      active.scrollIntoView({ behavior: "smooth", block: "start" });
+			    }
+			
+			    window.addEventListener("hashchange", showPageFromHash);
+			    document.addEventListener("DOMContentLoaded", showPageFromHash);
+			  })();
+			</script>
 
 </html>
+
 
 
 
