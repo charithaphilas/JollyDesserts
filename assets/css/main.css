@@ -4898,6 +4898,33 @@ html, body {
 /* Hide pages 2 & 3 until hash navigation reveals them */
 #page2, #page3 { display: none; }
 
+/* =================================
+   JOLLY DESSERTS – BACKGROUND OVERRIDE
+   (DO NOT DELETE TEMPLATE CODE ABOVE)
+   ================================= */
+
+/* Global purple */
+html, body {
+  background-color: #b9a6f2 !important;
+}
+
+/* Override Massively background layer */
+#wrapper > .bg,
+#wrapper > .bg.fixed {
+  background-color: #b9a6f2 !important;
+  background-image: none !important;
+}
+
+/* Remove dark fade overlay */
+#wrapper.fade-in:before {
+  background: transparent !important;
+}
+
+/* Safety */
+#wrapper {
+  background-color: #b9a6f2 !important;
+}
+
 
 
 
