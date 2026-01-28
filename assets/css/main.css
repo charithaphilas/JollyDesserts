@@ -4743,14 +4743,16 @@ body {
 
 .menu-card h3 {
   margin: 0 0 10px 0;
-  font-weight: 800;
-  letter-spacing: 0.04em;
-  text-transform: uppercase;
-  padding: 10px 12px;
-  border-radius: 12px;
-  background: #7a5ce6; /* bright purple header */
+  font-weight: 900;
+  text-transform: none;
+  letter-spacing: 0;
+  padding: 12px 14px;
+  border-radius: 14px;
+  background: #7a5ce6;
   color: #ffffff;
+  font-size: 1.15rem;
 }
+
 
 .menu-card .subhead {
   margin: 12px 0 8px 0;
@@ -4813,6 +4815,8 @@ body {
   background: #fff3cd; /* bright highlight */
   border: 1px solid rgba(0,0,0,0.08);
 }
+
+.price-line { white-space: normal; }
 
 
 
