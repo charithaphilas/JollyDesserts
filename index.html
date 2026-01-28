@@ -259,6 +259,26 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+			<script>
+			  (function () {
+			    const pages = ["page1", "page2", "page3"];
+			
+			    function showPageFromHash() {
+			      const id = (location.hash || "#page1").replace("#", "");
+			      pages.forEach((pid) => {
+			        const el = document.getElementById(pid);
+			        if (!el) return;
+			        el.style.display = (pid === id) ? "block" : "none";
+			      });
+			
+			      // jump to top so it feels like a new page
+			      window.scrollTo({ top: 0, left: 0, behavior: "instant" });
+			    }
+			
+			    window.addEventListener("load", showPageFromHash);
+			    window.addEventListener("hashchange", showPageFromHash);
+			  })();
+			</script>
 
 	</body>
 			<script>
@@ -282,6 +302,7 @@
 			</script>
 
 </html>
+
 
 
 
