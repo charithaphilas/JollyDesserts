@@ -4866,6 +4866,38 @@ html, body {
   background: #b9a6f2 !important;
   background-image: none !important;
 }
+/* =========================
+   JOLLY — FORCE PURPLE BG
+   ========================= */
+
+/* The colour you picked (change if you want a different purple) */
+:root { --jolly-purple: #b9a6f2; }
+
+/* Prevent iPhone overscroll “flash” */
+html, body {
+  background: var(--jolly-purple) !important;
+}
+
+/* Remove Massively’s background image/overlay on wrapper */
+#wrapper > .bg {
+  background-color: var(--jolly-purple) !important;
+  background-image: none !important;
+}
+
+/* Remove any overlay layers that can tint it */
+#wrapper > .bg:before,
+#wrapper > .bg:after,
+#wrapper.fade-in:before {
+  background: var(--jolly-purple) !important;
+  background-image: none !important;
+}
+
+/* Keep your content floating nicely above the purple */
+#main { background: transparent !important; }
+#intro { background: var(--jolly-purple) !important; }
+/* Hide pages 2 & 3 until hash navigation reveals them */
+#page2, #page3 { display: none; }
+
 
 
 
