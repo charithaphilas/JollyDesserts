@@ -4821,6 +4821,10 @@ body {
 .jolly-step {
   padding-top: 2rem;
 }
+/* JOLLY pagination: show one "page" at a time */
+.jolly-page { display: none; }
+.jolly-page.is-active { display: block; }
+
 
 
 
