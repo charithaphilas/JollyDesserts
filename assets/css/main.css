@@ -4726,5 +4726,93 @@ body {
   font-size: 1.05rem;
   line-height: 1.5;
 }
+/* JOLLY Desserts — menu layout (mobile-first) */
+.jolly-menu {
+  max-width: 860px;
+  margin: 0 auto;
+  display: grid;
+  gap: 14px;
+}
+
+.menu-card {
+  background: rgba(255, 255, 255, 0.94);
+  border-radius: 16px;
+  padding: 16px;
+  border: 2px solid rgba(0, 0, 0, 0.06);
+}
+
+.menu-card h3 {
+  margin: 0 0 10px 0;
+  font-weight: 800;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  padding: 10px 12px;
+  border-radius: 12px;
+  background: #7a5ce6; /* bright purple header */
+  color: #ffffff;
+}
+
+.menu-card .subhead {
+  margin: 12px 0 8px 0;
+  font-weight: 800;
+  font-size: 1rem;
+  color: #2b2b2b;
+}
+
+.menu-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 10px 4px;
+  border-bottom: 1px dashed rgba(0, 0, 0, 0.12);
+}
+
+.menu-row:last-child {
+  border-bottom: none;
+}
+
+.item {
+  font-weight: 700;
+  color: #1b1b1b;
+}
+
+.price {
+  font-weight: 900;
+  color: #111;
+  text-align: right;
+  white-space: nowrap;
+}
+
+.note {
+  font-weight: 600;
+  opacity: 0.75;
+}
+
+.pill-list {
+  list-style: none;
+  padding-left: 0;
+  margin: 8px 0 0 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.pill-list li {
+  background: #f2edff;
+  border: 1px solid rgba(122, 92, 230, 0.25);
+  border-radius: 999px;
+  padding: 6px 10px;
+  font-weight: 700;
+  color: #241a3a;
+}
+
+.add-on {
+  margin-top: 10px;
+  padding: 10px 12px;
+  border-radius: 12px;
+  background: #fff3cd; /* bright highlight */
+  border: 1px solid rgba(0,0,0,0.08);
+}
+
 
 
